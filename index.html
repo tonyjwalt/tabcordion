@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tabcordion</title>
+    <link rel="stylesheet" href="_css/tabcordion.css">
+  </head>
+
+  <body>
+    <div id="tabcordion" class="tabcordion">
+      <h3 class="tabcord-title" data-hname="web-desktop"><span>Tab 1</span></h3>
+      <div class="tabcord-disp techList clearfix">
+        <p>Content for Tabcordion Pane 1</p>
+      </div>
+      <h3 class="tabcord-title" data-hname="web-desktop"><span>Tab 2</span></h3>
+      <div class="tabcord-disp techList clearfix">
+        <p>Content for Tabcordion Pane 2</p>
+      </div>
+      <h3 class="tabcord-title" data-hname="web-desktop"><span>Tab 3</span></h3>
+      <div class="tabcord-disp techList clearfix">
+        <p>Content for Tabcordion Pane 3</p>
+      </div>
+      <h3 class="tabcord-title" data-hname="web-desktop"><span>Tab 4</span></h3>
+      <div class="tabcord-disp techList clearfix">
+        <p>Content for Tabcordion Pane 4</p>
+      </div>
+    </div>
+    <!-- get Jquery by CDN or local -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="_js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+    <!-- Vendor scripts -->
+    <script src="_js/vendor/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="_js/jquery.tabcordion_new.js"></script>
+
+    <!-- page level script -->
+    <script>
+      $( function() {
+        //initialize the tabcordion
+        $('#tabcordion').tabcordion({accordionToggle: false});
+      } );
+    </script>
+  </body>
+</html>
