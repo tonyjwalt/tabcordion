@@ -1,0 +1,56 @@
+/* =============================================================================
+*  @TABCORDION
+* ========================================================================== */
+
+// ===================================
+// Mixins
+// ===================================
+@mixin boxSize() {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@mixin clearfix() {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: " ";
+    display: table; }
+  &:after {
+    clear: both; }
+}
+// ===================================
+// Styles
+// ===================================
+.tabcordion,
+.tabcord-headerBar {
+	@include clearfix();
+}
+.tabcord-title {
+	cursor:pointer;
+  float: left;
+  width: 25%;
+  margin:0;
+  @include boxSize();
+}
+.tabcord-disp {
+	// display: none;
+}
+@media only screen and (min-width: 701px) {
+	.tabcord-title {
+		// display: none !important;
+	}
+	.tabcord-headerBar,
+	.tabcord-headerBar .tabcord-title {
+		// display: block !important;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.tabcord-headerBar {
+		// display: none !important;
+	}
+  .tabcord-title {
+    float:none;
+    width:auto;
+  }
+}

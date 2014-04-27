@@ -1,65 +1,28 @@
 /* =============================================================================
 *  @TABCORDION
 * ========================================================================== */
+.tabcordion,
 .tabcord-headerBar {
-	overflow: hidden;
-}
-.tabcord-title {
-    color:#000;
-    font-size:16px;
-    font-family: "pill-gothic-600mg-n7","pill-gothic-600mg",sans-serif;
-    font-weight:400;
-    padding-bottom: 2px;
-    margin-bottom:6px;
-}
-.js .tabcord-title {
-	cursor:pointer;
-    float: left;
-    width: 25%;
-    font-size:14px;
-    margin-bottom:20px;
-    border-color: #ccc;
-    border-style: solid;
-    border-top-width:2px;
-}
-.js .tabcord-title span {
-    display:block;
-    background-color: rgb(220,220,220);
-    height:50px;
-    padding: 8px;
-    margin-right: 1px;
-    color: rgb(0,0,0);
-}
-.js .tabcord-title.last span {
-    margin-right:0;
-}
-.js .tabcord-title.active span,
-.js .tabcord-title:hover span{
-    color: rgb(51,51,51);
-    background-color: #fff;
-}
-.js .tabcord-disp {
-	display: none;
-}
-@media only screen and (min-width: 701px) {
-	.tabcord-title {
-		display: none !important;
-	}
-	.tabcord-headerBar,
-	.tabcord-headerBar .tabcord-title {
-		display: block !important;
-	}
-}
-@media only screen and (max-width: 700px) {
-	.tabcord-headerBar {
-		display: none !important;
-	}
+  *zoom: 1; }
+  .tabcordion:before, .tabcordion:after,
+  .tabcord-headerBar:before,
+  .tabcord-headerBar:after {
+    content: " ";
+    display: table; }
+  .tabcordion:after,
+  .tabcord-headerBar:after {
+    clear: both; }
 
-    .js .tabcord-title {
-        float:none;
-        width:auto;
-        border-top-width: 0;
-        border-bottom-width: 2px;
-        padding-bottom:0;
-    }
-}
+.tabcord-title {
+  cursor: pointer;
+  float: left;
+  width: 25%;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media only screen and (max-width: 700px) {
+  .tabcord-title {
+    float: none;
+    width: auto; } }
