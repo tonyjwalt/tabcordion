@@ -28,29 +28,21 @@
 }
 .tabcord-title {
 	cursor:pointer;
-  float: left;
-  width: 25%;
   margin:0;
   @include boxSize();
 }
-.tabcord-disp {
-	// display: none;
+.tabcord-headerBar .tabcord-title{
+  float: left;
 }
-@media only screen and (min-width: 701px) {
-	.tabcord-title {
-		// display: none !important;
-	}
-	.tabcord-headerBar,
-	.tabcord-headerBar .tabcord-title {
-		// display: block !important;
-	}
+.tabcord-disp,
+.tabcord-headerBar {
+  display: none;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 700px) {
 	.tabcord-headerBar {
-		// display: none !important;
-	}
-  .tabcord-title {
-    float:none;
-    width:auto;
+    display: block;
   }
+  .tabcordion > .tabcord-title {
+		display: none;
+	}
 }

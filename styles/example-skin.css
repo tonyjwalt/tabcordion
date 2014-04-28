@@ -1,0 +1,39 @@
+.tabcordion {
+  border-top: 1px solid #333; }
+
+.tabcord-title {
+  background-color: #c8c8c8;
+  padding: 8px;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  position: relative; }
+
+.tabcord-headerBar {
+  border-left: 1px solid #333; }
+  .tabcord-headerBar .tabcord-title {
+    border-left: none; }
+    .tabcord-headerBar .tabcord-title.active:after {
+      background-color: #fff;
+      display: block;
+      position: absolute;
+      content: " ";
+      bottom: -1px;
+      height: 1px;
+      left: 0;
+      right: 0; }
+
+.tabcord-title.active,
+.tabcord-title:hover {
+  color: #333333;
+  background-color: #fff; }
+
+.tabcord-disp {
+  border: 1px solid #333;
+  background-color: #fff;
+  border-top: none;
+  padding: 0 20px; }
+  .tabcord-disp p {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 10px; }
