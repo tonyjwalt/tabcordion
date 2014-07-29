@@ -39,6 +39,7 @@ The styles are compiled to CSS, but the base code was written using SASS. This a
 + allow an active item to be initially set via JS or class on HTML item
 + if click during an animation, track final one so that we can trigger it on completion
 
+
 ## Known Issues
 none yet
 
